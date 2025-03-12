@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones de Colores</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            flex-direction: column;
+        }
+        .boton {
+            width: 120px;
+            height: 50px;
+            margin: 10px;
+            font-size: 16px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .rojo { background-color: red; }
+        .azul { background-color: blue; }
+        .verde { background-color: green; }
+        .amarillo { background-color: yellow; color: black; }
+        .naranja { background-color: orange; }
+    </style>
+    <script>
+        function mostrarMensaje(color) {
+            alert("Has presionado el botón " + color);
+        }
+    </script>
+</head>
+<body>
+    <button class="boton rojo" onclick="mostrarMensaje('Rojo')">Rojo</button>
+    <button class="boton azul" onclick="mostrarMensaje('Azul')">Azul</button>
+    <button class="boton verde" onclick="mostrarMensaje('Verde')">Verde</button>
+    <button class="boton amarillo" onclick="mostrarMensaje('Amarillo')">Amarillo</button>
+    <button class="boton naranja" onclick="mostrarMensaje('Naranja')">Naranja</button>
+</body>
+</html>
